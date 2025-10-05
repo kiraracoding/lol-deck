@@ -24,9 +24,15 @@ function AllChampionsPage() {
                 </div>
 
                 <div className="basis-4/5 flex flex-col 
-                            justify-center items-center 
+                            items-center 
                             bg-gray-500">
-                    <div className="border w-8/9">
+                    <div className="w-8/9 mt-20">
+                        <UnlearnedCard/>
+                        <UnlearnedCard/>
+                        <UnlearnedCard/>
+                        <UnlearnedCard/>
+                        <UnlearnedCard/>
+                        <UnlearnedCard/>
                         <UnlearnedCard/>
                     </div>
                         
