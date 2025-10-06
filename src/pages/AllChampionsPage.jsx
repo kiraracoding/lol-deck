@@ -5,10 +5,21 @@ function AllChampionsPage() {
     return(
         <>
             <div className="flex flex-row pt-[110px] 
-                        w-full min-h-screen ">
+                            w-full min-h-screen
+                            min-w-[375px]">
             
-                <div className="flex flex-col items-center
-                                basis-1/5 bg-gray-300 pt-20">
+                <div className="hidden
+                                2xl:flex flex-col items-center
+                                2xl:basis-1/5 bg-gray-300 pt-20
+                                xl:flex flex-col items-center
+                                xl:basis-1/5 bg-gray-300 pt-20
+                                lg:flex flex-col items-center
+                                lg:basis-1/5 bg-gray-300 pt-20
+                                md:flex flex-col items-center
+                                md:basis-1/5 bg-gray-300 pt-20
+                                sm:flex flex-col items-center
+                                sm:basis-1/5 bg-gray-300 pt-20
+                                ">
 
                     <div className="flex flex-col items-center w-[200px]">
                         <h1>Champions Learned:</h1>
@@ -23,9 +34,13 @@ function AllChampionsPage() {
 
                 </div>
 
-                <div className="basis-4/5 flex flex-col 
-                            items-center 
-                            bg-gray-500">
+                <div className="w-full flex flex-col items-center bg-gray-500
+                                2xl:basis-4/5
+                                xl:basis-4/5  
+                                lg:basis-4/5
+                                md:basis-4/5
+                                sm:basis-4/5
+                                ">
                     <div className="w-8/9 mt-20">
                         <UnlearnedCard/>
                         <UnlearnedCard/>
