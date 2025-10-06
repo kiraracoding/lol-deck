@@ -21,14 +21,18 @@ function UnlearnedCard() {
                                 lg:flex lg:flex-row
                                 lg:p-0
                                 md:flex md:flex-row
-                                md:justify-start p-10'>
+                                md:justify-start p-10
+                                sm:flex sm:flex-row
+                                sm:p-5 sm:justify-start'>
                     
                     <img className='2xl:h-80 2xl:w-60 2xl:mr-5
                                 xl:h-80 xl:w-60 xl:mr-5
                                 lg:w-50 lg:h-70
                                 lg:mr-3
                                 md:h-70 md:w-50
-                                md:mr-10'
+                                md:mr-10
+                                sm:h-60 w-40
+                                sm:mr-7'
                      src={placeholderPortrait}/>
 
                     <div className='w-1/5 min-w-[170px]
@@ -44,7 +48,8 @@ function UnlearnedCard() {
                                    xl:text-left
                                    lg:text-lg
                                    lg:text-left
-                                   md:text-xl' 
+                                   md:text-xl
+                                   sm:text-lg' 
                                    >Champion's Name
                         </h1>
                         <h3 className='pb-5 
@@ -54,7 +59,8 @@ function UnlearnedCard() {
                                    xl:text-left
                                    lg:text-base
                                    lg:text-left
-                                   md:text-lg'
+                                   md:text-lg
+                                   sm:text-base'
                                    >"Champion's Title"
                         </h3>
                         <p className='
@@ -103,7 +109,10 @@ function UnlearnedCard() {
                                 lg:pl-5
                                 md:w-full
                                 md:p-10
-                                md:pt-0'>
+                                md:pt-0
+                                sm:w-full
+                                sm:p-5
+                                sm:pt-0'>
                     <div className='flex items-center 
                                     2xl: mt-5 mb-5
                                     lg:mt-3 mb-3'>
@@ -111,20 +120,23 @@ function UnlearnedCard() {
                                         2xl:h-15 2xl:w-15
                                         xl:h-13 xl:w-13
                                         lg:h-12 lg:w-12
-                                        md:h-15 md:w-15'
+                                        md:h-15 md:w-15
+                                        sm:h-13 sm:w-13'
                              src={placeholderIcon}/>
                         <div>
                             <h1 className='2xl:text-lg
                                            xl:text-[15px]
                                            lg:text-[13px]
-                                           '>Passive: Draconic Essence</h1>
+                                           md:text-[13px]
+                                           sm:text-[12px]'>Passive: Draconic Essence</h1>
                             <p className='w-4/5
                                           2xl:text-xs 
                                           2xl:w-2/3
                                           xl:text-xs
                                           lg:text-[10px] leading-tight
                                           md:text-[10px] leading tight
-                                          md:max-w-2/3'>
+                                          md:max-w-2/3
+                                          sm:text-[10px] leading-tight'>
                                Dragonus automatically stores 5% of damage dealt to champions 
                                as bonus fire damage on his next basic attack.</p>
                         </div>
@@ -134,22 +146,29 @@ function UnlearnedCard() {
                         <div className='flex items-center w-full 
                                         2xl:pb-5
                                         xl:pb-5
-                                        lg:pb-2'>
+                                        lg:pb-2
+                                        md:pb-2
+                                        sm:pb-2'>
                             <img className='mr-3
                                             2xl:h-15 2xl:w-15
                                             xl:h-13 xl:w-13
                                             lg:h-12 lg:w-12
-                                            md:h-15 md:w-15' 
+                                            md:h-15 md:w-15
+                                            sm:h-13 sm:w-13' 
                              src={placeholderIcon} />
                              <div>
                                 <h1 className='2xl:text-lg
                                                xl:text-[15px]
-                                               lg:text-[13px]'
+                                               lg:text-[13px]
+                                               md:text-[13px]
+                                               sm:text-[12px]'
                                                >Q: Flame Breath</h1>
                                 <p className='w-full pr-5
                                               2xl:text-xs 2xl:w-4/5
                                               xl:text-xs
-                                              lg:pr-2 text-[10px] leading-tight'>
+                                              lg:pr-2 text-[10px] leading-tight
+                                              md:pr-2 text-[10px] leading-tight
+                                              sm:pr-2 text-[10px] leading-tight'>
                                    Breathes fire in a cone, dealing magic damage and burning enemies over time.</p>
                              </div>
                         </div>
@@ -157,22 +176,28 @@ function UnlearnedCard() {
                         <div className='flex items-center w-full
                                         2xl:pb-5
                                         xl:pb-5
-                                        lg:pb-2'>
+                                        lg:pb-2
+                                        md:pb-2
+                                        sm:pb-2'>
                             <img className='mr-3
                                             2xl:h-15 2xl:w-15
                                             xl:h-13 xl:w-13
                                             lg:h-12 lg:w-12
-                                            md:h-15 md:w-15'
+                                            md:h-15 md:w-15
+                                            sm:h-13 sm:w-13'
                              src={placeholderIcon} />
                              <div>
                                 <h1 className='2xl:text-lg
                                                xl:text-[15px]
                                                lg:text-[13px]
-                                               '>W: Wing Gust</h1>
+                                               md:text-[13px]
+                                               sm:text-[12px]'>W: Wing Gust</h1>
                                 <p className='w-full pr-5
                                               2xl:text-xs 2xl:w-2/3
                                               xl:text-xs
-                                              lg:pr-2 text-[10px] leading-tight'>
+                                              lg:pr-2 text-[10px] leading-tight
+                                              md:pr-2 text-[10px] leading-tight
+                                              sm:pr-2 text-[10px] leading-tight'>
                                    Dragonus flaps his wings, knocking enemies back and slowing them.</p>
                              </div>
                         </div>
@@ -180,22 +205,27 @@ function UnlearnedCard() {
                         <div className='flex w-full items-center 
                                         2xl:pb-5
                                         xl:pb-5
-                                        lg:pb-2'>
+                                        lg:pb-2
+                                        md:pb-2
+                                        sm:pb-2'>
                             <img className='mr-3
                                             2xl:h-15 2xl:w-15
                                             xl:h-13 xl:w-13
                                             lg:h-12 lg:w-12
-                                            md:h-15 md:w-15' 
+                                            md:h-15 md:w-15
+                                            sm:h-13 sm:w-13' 
                              src={placeholderIcon} />
                              <div>
                                 <h1 className='2xl:text-lg
                                                xl:text-[15px]
                                                lg:text-[13px]
-                                               '>E: Scale Shield</h1>
+                                               md:text-[13px]
+                                               sm:text-[12px]'>E: Scale Shield</h1>
                                 <p className='w-full pr-5
                                               2xl:text-xs 2xl:w-2/3
                                               xl:text-xs
-                                              lg:pr-2 text-[10px] leading-tight'>
+                                              lg:pr-2 text-[10px] leading-tight
+                                              md:pr-2 text-[10px] leading-tight'>
                                    Dragonus encases himself in scales, gaining a shield and increased resistance.</p>
                              </div>
                         </div>
@@ -203,22 +233,28 @@ function UnlearnedCard() {
                         <div className='flex w-full items-center 
                                         2xl:pb-5
                                         xl:pb-5
-                                        lg:pb-2'>
+                                        lg:pb-2
+                                        md:pb-2
+                                        sm:pb-2'>
                             <img className='mr-3
                                             2xl:h-15 2xl:w-15
                                             xl:h-13 xl:w-13
                                             lg:h-12 lg:w-12
-                                            md:h-15 md:w-15' 
+                                            md:h-15 md:w-15
+                                            sm:h-13 sm:w-13' 
                              src={placeholderIcon} />
                              <div>
                                 <h1 className='2xl:text-lg
                                                xl:text-[15px]
                                                lg:text-[13px]
-                                               '>R: Dragon's Wrath</h1>
+                                               md:text-[13px]
+                                               sm:text-[12px]'>R: Dragon's Wrath</h1>
                                 <p className='w-full pr-5
                                               2xl:text-xs 2xl:w-2/3
                                               xl:text-xs
-                                              lg:pr-2 text-[10px] leading-tight'>
+                                              lg:pr-2 text-[10px] leading-tight
+                                              md:pr-2 text-[10px] leading-tight
+                                              sm:pr-2 text-[10px] leading-tight'>
                                    Dragonus wings back and unleashes a massive blast of flame, dealing huge damage and knocking up enemies.</p>
                              </div>
                         </div>
