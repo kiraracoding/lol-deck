@@ -4,7 +4,7 @@ function ByRolePage() {
     
     return(
         <>
-            <div className="flex flex-row pt-[95px]
+            <div className="flex flex-row pt-[110px]
                             w-full min-h-screen
                             min-w-[375px]">
             
@@ -22,7 +22,7 @@ function ByRolePage() {
                                 "> 
 
                     <div className="flex flex-col items-center 
-                                    pt-[15px]">
+                                    w-[200px] pt-[15px]">
                         <h1>Top Champions</h1>
                         <p>0/0</p>
                     </div>
@@ -69,7 +69,7 @@ function ByRolePage() {
                         <h1>Champions Learned: 0</h1>
                         <h1>Champions Left: 0</h1>
                     </div>
-                    <div className="w-8/9 mt-20">
+                    <div className="w-8/9 mt-10">
                         <UnlearnedCard/>
                         <UnlearnedCard/>
                         <UnlearnedCard/>

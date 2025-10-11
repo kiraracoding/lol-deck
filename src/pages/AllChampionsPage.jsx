@@ -4,11 +4,11 @@ function AllChampionsPage() {
     
     return(
         <>
-            <div className="flex flex-row pt-[95px]
+            <div className="flex flex-row pt-[110px]
                             w-full min-h-screen
                             min-w-[375px]">
             
-                <div className="hidden 
+                <div className="hidden
                                 2xl:flex flex-col items-center
                                 2xl:basis-1/5 bg-gray-300 pt-20
                                 xl:flex flex-col items-center
@@ -41,7 +41,8 @@ function AllChampionsPage() {
                                 md:basis-4/5
                                 sm:basis-4/5
                                 ">
-                    <div className='text-center pt-15
+                    <div className='w-full text-center p-10 bg-gray-600
+                                    flex justify-around
                                     2xl:hidden
                                     xl:hidden
                                     lg:hidden
@@ -50,7 +51,7 @@ function AllChampionsPage() {
                         <h1>Champions Learned: 0</h1>
                         <h1>Champions Left: 0</h1>
                     </div>
-                    <div className="w-8/9 mt-20">
+                    <div className="w-8/9 mt-10">
                         <UnlearnedCard/>
                         <UnlearnedCard/>
                         <UnlearnedCard/>
