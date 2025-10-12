@@ -9,13 +9,13 @@ function MyChampionsPage() {
             
             <div className="hidden
                             2xl:flex flex-col items-center
-                            2xl:basis-1/5 bg-gray-300 pt-20
+                            2xl:basis-1/5 bg-gray-600 pt-20
                             xl:flex flex-col items-center
-                            xl:basis-1/5 bg-gray-300 pt-20
+                            xl:basis-1/5 bg-gray-600 pt-20
                             lg:flex flex-col items-center
-                            lg:basis-1/5 bg-gray-300 pt-20
+                            lg:basis-1/5 bg-gray-600 pt-20
                             md:flex flex-col items-center
-                            md:basis-1/5 bg-gray-300 pt-20
+                            md:basis-1/5 bg-gray-600 pt-20
                             sm:hidden                                
                             ">
                 <div className="flex flex-col items-center w-[200px]">
@@ -38,7 +38,8 @@ function MyChampionsPage() {
                             md:basis-4/5
                             sm:w-full
                             ">
-                <div className='text-center pt-15
+                <div className='w-full text-center p-10 bg-gray-600
+                                flex justify-around
                                 2xl:hidden
                                 xl:hidden
                                 lg:hidden

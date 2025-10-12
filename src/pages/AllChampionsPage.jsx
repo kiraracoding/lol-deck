@@ -10,15 +10,15 @@ function AllChampionsPage() {
             
                 <div className="hidden
                                 2xl:flex flex-col items-center
-                                2xl:basis-1/5 bg-gray-300 pt-20
+                                2xl:basis-1/5 bg-gray-600 pt-20
                                 xl:flex flex-col items-center
-                                xl:basis-1/5 bg-gray-300 pt-20
+                                xl:basis-1/5 bg-gray-600 pt-20
                                 lg:flex flex-col items-center
-                                lg:basis-1/5 bg-gray-300 pt-20
+                                lg:basis-1/5 bg-gray-600 pt-20
                                 md:flex flex-col items-center
-                                md:basis-1/5 bg-gray-300 pt-20
+                                md:basis-1/5 bg-gray-600 pt-20
                                 sm:flex flex-col items-center
-                                sm:basis-1/5 bg-gray-300 pt-20
+                                sm:basis-1/5 bg-gray-600 pt-20
                                 "> 
 
                     <div className="flex flex-col items-center w-[200px] pt-[15px]">
