@@ -1,4 +1,5 @@
 import UnlearnedCard from "../components/UnlearnedCard";
+import MainBg from "../assets/main-bg.jpg";
 
 function AllChampionsPage() {
     
@@ -6,7 +7,9 @@ function AllChampionsPage() {
         <>
             <div className="flex flex-row pt-[110px]
                             w-full min-h-screen
-                            min-w-[375px]">
+                            min-w-[375px]]
+                            "
+                >
             
                 <div className="hidden
                                 2xl:flex flex-col items-center
