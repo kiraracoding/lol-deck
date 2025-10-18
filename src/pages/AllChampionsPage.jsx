@@ -1,8 +1,30 @@
 import UnlearnedCard from "../components/UnlearnedCard";
-import MainBg from "../assets/main-bg.jpg";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function AllChampionsPage() {
     
+    const [championNames, setChampionNames] = useState([]);
+
+    useEffect(() => {
+        const fetchChampions = async () => {
+        try {
+            const versionsResponse = await axios.get('https://ddragon.leagueoflegends.com/api/versions.json');
+            const latestVersion = versionsResponse.data[0];
+
+            const championsResponse = await axios.get(`https://ddragon.leagueoflegends.com/cdn/${latestVersion}/data/en_US/champion.json`);
+            const championsData = championsResponse.data.data;
+
+            const namesArray = Object.keys(championsData);
+            setChampionNames(namesArray);
+        } catch (error) {
+            console.error('Failed to fetch champion data:', error);
+        }
+    };
+
+    fetchChampions();
+    }, []);
+
     return(
         <>
             <div className="flex flex-row pt-[110px]
@@ -54,14 +76,11 @@ function AllChampionsPage() {
                         <h1>Champions Learned: 0</h1>
                         <h1>Champions Left: 0</h1>
                     </div>
+
                     <div className="w-8/9 mt-10">
-                        <UnlearnedCard/>
-                        <UnlearnedCard/>
-                        <UnlearnedCard/>
-                        <UnlearnedCard/>
-                        <UnlearnedCard/>
-                        <UnlearnedCard/>
-                        <UnlearnedCard/>
+                        {championNames.map((name) => (
+                            <UnlearnedCard key={name} name={name}/>
+                        ))}
                     </div>
                         
                 </div>

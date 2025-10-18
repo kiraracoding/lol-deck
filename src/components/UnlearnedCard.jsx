@@ -1,7 +1,7 @@
 import placeholderPortrait from '../assets/placeholder-portrait.png';
 import placeholderIcon from '../assets/placeholder-icon.jpg';
 
-function UnlearnedCard() {
+function UnlearnedCard({ name }) {
     return (
         <>
             <div className='border mb-10
@@ -54,7 +54,7 @@ function UnlearnedCard() {
                                        lg:text-left
                                        md:text-xl
                                        sm:text-lg' 
-                                       >Champion's Name
+                                       >{name}
                         </h1>
                         <h3 className='pb-5 text-xs
                                        2xl:text-lg
